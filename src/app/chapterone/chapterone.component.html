@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Lorem Ipsum by Ari Spector
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-nav>
+    <a routerLink="/toc">Table of Contents</a>
+    <a routerLink="/chaptertwo">Chapter Two</a>
+    <a routerLink="/chapterthree">Chapter Three</a>
+  </ion-nav>
+  </ion-content>
+
+<h2>Chapter One</h2>
+<h3>Pages</h3>
+<ul class="pages">
+  <li *ngFor="let page of pages; let i=index" (click)="onSelect(page)">
+    <span class="page">{{page.id}}</span>
+  </li>
+</ul>
+<div *ngIf="selectedPage">
+  <p>Page {{selectedPage.content}}<p>

@@ -1,0 +1,16 @@
+.pages {
+    margin: 0 0 5em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 20em;
+  }
+.page li {
+    left: 0;
+    background-color: #EEE;
+    color: rgb(1, 4, 41);
+
+}
+.page li.selected {
+    background-color: rgb(83, 131, 151);
+    color: red;
+  }
